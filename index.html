@@ -26,7 +26,7 @@
             flex-direction: column;
             gap: 25px; 
             width: 90%;
-            max-width: 500px;
+            max-width: 600px; /* Increased slightly to fit the graph better */
         }
 
         /* --- Retro Box Design --- */
@@ -123,17 +123,12 @@
         }
         .html-skill i { color: #e34c26; }
         .css-skill i { color: #264de4; }
-        
-        /* Updated C skill to Blue */
         .c-skill i { color: #00599C; } 
-        
-        /* Added Lua skill (Navy Blue) */
         .lua-skill i { color: #000080; }
-
         .python-skill i { color: #3776ab; }
         .git-skill i { color: #f05032; }
 
-        /* --- NEW: Project Styles --- */
+        /* --- Project Styles --- */
         .project-list {
             display: flex;
             flex-direction: column;
@@ -173,6 +168,13 @@
             font-weight: 500;
         }
 
+        /* --- Graph Styles --- */
+        .graph-img {
+            width: 100%;
+            height: auto;
+            /* Invert colors slightly if needed, but black works best for retro */
+        }
+
     </style>
 </head>
 <body>
@@ -197,11 +199,8 @@
             <div class="skills-wrapper">
                 <span class="skill-badge html-skill"><i class="fab fa-html5"></i> HTML</span>
                 <span class="skill-badge css-skill"><i class="fab fa-css3-alt"></i> CSS</span>
-                
                 <span class="skill-badge c-skill"><i class="fas fa-code"></i> C</span>
-                
                 <span class="skill-badge lua-skill"><i class="fas fa-moon"></i> Lua</span>
-
                 <span class="skill-badge python-skill"><i class="fab fa-python"></i> Python</span>
                 <span class="skill-badge git-skill"><i class="fab fa-git-alt"></i> Git</span>
             </div>
@@ -228,11 +227,17 @@
 
             </div>
         </div>
+        
+        <div class="box">
+            <h2>GitHub Activity</h2>
+            <img src="https://ghchart.rshah.org/000000/rattatuye-code" alt="Phurin's Github Chart" class="graph-img">
+            <p style="font-size: 0.8rem; margin-top: 10px;">My contribution history over the last year</p>
+        </div>
 
         <div class="box">
             <h2>Social Media</h2>
             <div class="social-links">
-                <a href="https://github.com/Phurin-reabroi" target="_blank" class="social-btn github">
+                <a href="https://github.com/rattatuye-code" target="_blank" class="social-btn github">
                     <i class="fab fa-github"></i> GitHub
                 </a>
                 <a href="https://www.facebook.com/phurin.reabroi/" target="_blank" class="social-btn facebook">
